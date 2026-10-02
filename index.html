@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PIA Careers - AI-driven Talent Acquisition Portal. Explore careers, apply online, and engage with our automated screening tools.">
+  <title>PIA Careers - AI-Powered Job Board & Recruiting Portal</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- PDF.js for resume text extraction -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+  <!-- Tesseract.js for image OCR -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+
+  <!-- EmailJS for sending real emails -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- TensorFlow.js + BlazeFace for multi-face proctoring (lightweight) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface@0.0.7/dist/blazeface.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.2.3/dist/coco-ssd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api/dist/face-api.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      // NOTE: Replace this with your actual public key from EmailJS dashboard
+      emailjs.init("h_lT3KDKgQm8yV1-U");
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Main App Navigation Header -->
+  <header class="app-header" id="app-header-container"></header>
+
+  <!-- Central Dynamic View Layout -->
+  <main class="container" id="view-container">
+    <div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
+      <p style="color: var(--text-muted); font-size: 1.2rem;">Bootstrapping recruiting engine...</p>
+    </div>
+  </main>
+
+  <!-- Notification / Simulated Email Inbox Drawer -->
+  <div class="inbox-overlay" id="inbox-drawer"></div>
+
+  <!-- HR Login Modal (rendered dynamically) -->
+  <div id="hr-login-modal-wrapper"></div>
+
+  <script src="db.js"></script>
+  
+  <script src="mock_data.js"></script>
+  <script src="emailService.js"></script>
+  <script src="app.js"></script>
+  <script src="careers_portal.js"></script>
+  <script src="hr_dashboard.js"></script>
+  <script src="assessment_center.js"></script>
+  <script src="ai_interview.js"></script>
+
+</body>
+</html>

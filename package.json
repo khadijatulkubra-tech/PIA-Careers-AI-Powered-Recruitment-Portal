@@ -1,0 +1,9 @@
+{
+  "name": "pia-hr-system",
+  "version": "1.0.0",
+  "description": "PIA Careers & AI-Powered HR Recruitment Portal",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  }
+}
